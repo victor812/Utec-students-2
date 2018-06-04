@@ -16,6 +16,9 @@ def dividir(a,b):
         return c
     elif b==0:
             print("indeterminado")
+def porcentaje(a,b):
+    c=a*b/100
+    return c
 e=float(2.7182818)
 pi=float(3.141592)
 π=float(3.141592)
