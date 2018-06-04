@@ -1,104 +1,49 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+#Trabajo colaborativo de ICC
+#Definir funciones
+#Funcón calculadora :''v
+def sumar(a,b):
+    c = a + b
+    return c
+def restar(a,b):
+    c= abs(a-b)
+    return c
+def multiplicar(a,b):
+    c= a*b
+    return c
+def dividir(a,b):
+    if b!=0:
+        c=a/b
+        return c
+    elif b==0:
+            print("indeterminado")
+e=float(2.7182818)
+pi=float(3.141592)
+π=float(3.141592)
+print("CALCULADORA COQUITO solo numeros naturales")
+print("S: Sumar")
+print("R: Restar")
+print("M: Multiplicar")
+print("D: Dividir")
+print("X: Salir")
+i=0
+while i==0:
+    print("----------------------------")
+    op=input("Seleccione operación:")
+    if op!="X":
+        x=float(input("Ingrese 1er valor: "))
+        y=float(input("Ingrese 2do valor: "))
+        S=sumar(x,y)
+        R=restar(x,y)
+        M=multiplicar(x,y)
+        D=dividir(x,y)
+        if op=="S":
+            print("La suma es:",str(S))
+        elif op=="R":
+            print("La resta es:",str(R))
+        elif op=="M":
+            print("La multiplicación es:",str(M))
+        elif op=="D":
+            print("La división es:", str(D))
+    else:
+        i=i+1  
 
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
